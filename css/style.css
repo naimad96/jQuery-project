@@ -1,90 +1,29 @@
-body{
-width: 100%;
-size:cover;
-margin: 0 auto;
-padding: 0;
-text-align: center;
-font-family: 'PT Serif', serif;
-font-weight: 400;
-color:#505a63;
-background-color: #e5f0f9;
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-}
-header{
-  box-sizing:border-box;
-  margin: 0;
-  padding: 10px;
+@media only screen and (max-width: 600px){
+  body{
   width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-color:#66a0ff;
-}
-.container{
+  margin: 0 auto;
   padding: 0;
-  width: 20%;
-  display: flex;
-  justify-content: space-between;
+  font-family: 'PT Serif', serif;
+  font-weight: 400;
+  color:#505a63;
+  }
+  a{
+    text-decoration: none;
+    color:#505a63;
+  }
+
+/*Header*/
+/*Navigation*/
+.navigation-list a:hover{
+  color:#303a41;
+  border-bottom: 1px solid #303a41;
 }
-h1{
+.navigation-list{
+  list-style-type: none;
+  margin:0;
   padding: 0;
-  margin: 0;
-  font-size: 30px;
-  text-align:left;
 }
-button{
-  border:none;
-  margin-right: 10px;
-  text-decoration: none;
-  width: 50%;
-  font-size: 25px;
-  background-color: rgb(150, 190, 255);
-  color:white;
-  cursor:pointer;
-}
-button:hover{
-  background-color: rgb(130,180,240);
-}
-  /*Styling form*/
-.login-form-hidden{
-  display:none;
-}
-.login-form{
-padding: 20px;
-width: 30%;
-top:65px;
-right: 0;
-position:absolute;
-display: flex;
-background-color: #66a0ff;
-justify-content: center;
-flex-direction: column;
-color: white;
-}
-input{
-  margin: 0;
-  outline: none;
-  background-color:  #66a0ff;
-  font-size: 20px;
-  margin-bottom: 30px;
-  color:white;
-  width: 100%;
-  height: 40px;
-  border: none;
-  border-bottom: 0.5px solid white;
-}
-.form-btn{
-  width: 100%;
-  margin-bottom: 10px;
-}
-a{
-  color: white;
-  text-decoration: none;
-  font: bold;
-}
+
 input:focus::-webkit-input-placeholder { color:transparent; }
 input:focus:-moz-placeholder { color:transparent; } /* FF 4-18 */
 input:focus::-moz-placeholder { color:transparent; } /* FF 19+ */
@@ -92,7 +31,3 @@ input:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
 input::placeholder {color: white;}
 input:-ms-input-placeholder {color: white;}
 input::-ms-input-placeholder {color: white;}
-
-.hello{
-  height: 1900px;
-}
