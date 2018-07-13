@@ -1,33 +1,80 @@
-@media only screen and (max-width: 600px){
-  body{
-  width: 100%;
-  margin: 0 auto;
-  padding: 0;
-  font-family: 'PT Serif', serif;
-  font-weight: 400;
-  color:#505a63;
-  }
-  a{
-    text-decoration: none;
-    color:#505a63;
-  }
+@media only screen and (max-width: 600px) {
+    body {
+        width: 100%;
+        margin: 0 auto;
+        padding: 0;
+        font-family: 'PT Serif', serif;
+        font-weight: 400;
+        color:#505a63;
+    }
+    /*Header*/
+    header{
+      width: 100%;
 
-/*Header*/
-/*Navigation*/
-.navigation-list a:hover{
-  color:#303a41;
-  border-bottom: 1px solid #303a41;
-}
-.navigation-list{
-  list-style-type: none;
-  margin:0;
-  padding: 0;
-}
+    }
+    a{
+      color:white;
+      text-decoration: none;
+    }
+    h1{
+      font-size: 25px;
+    }
+    .logo-container{
+      background-color: #659dbd;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px;
+    }
+    .logo-container svg{
+      fill:white;
+    }
+    /*Navigation*/
+    .navigation-list-hidden{
+      display:none;
+    }
+    .navigation-list{
+      width: 100%;
+      background-color: #659dbd;
+      position: absolute;
+      top:0;
+      right: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      font-size:25px;
+    }
+    .navigation-list a{
+      text-decoration: none;
+      color:white;
+    }
+    .navigation-list a:hover{
+      border-bottom: 1px solid #303a41;
+      color:#303a41;
+    }
+    .navigation-list li{
+      padding: 10px;
+      letter-spacing: 3px;
 
+    }
+    .navigation-list:first-child{
+      margin-left: 100px;
+    }
+
+
+
+
+
+}
+/*
 input:focus::-webkit-input-placeholder { color:transparent; }
-input:focus:-moz-placeholder { color:transparent; } /* FF 4-18 */
-input:focus::-moz-placeholder { color:transparent; } /* FF 19+ */
-input:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
+input:focus:-moz-placeholder { color:transparent; }
+input:focus::-moz-placeholder { color:transparent; }
+input:focus:-ms-input-placeholder { color:transparent; }
 input::placeholder {color: white;}
 input:-ms-input-placeholder {color: white;}
 input::-ms-input-placeholder {color: white;}
+*/
